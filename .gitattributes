@@ -1,0 +1,74 @@
+# =============================================================
+# Vertigo6 - Git attributes
+# Normalizes line endings across machines and teaches Git how to
+# treat Unity YAML and binary assets. Keeps diffs clean and makes
+# scene/prefab merges survivable.
+# =============================================================
+
+# Auto-detect text files. Store LF in the repo, check out native
+# (CRLF on Windows). Fixes the "whole file changed" line-ending diffs.
+* text=auto
+
+# ---- Source / text ----
+*.cs        text diff=csharp
+*.shader    text
+*.cginc     text
+*.hlsl      text
+*.uss       text
+*.uxml      text
+*.json      text
+*.md        text
+*.txt       text
+*.asmdef    text
+*.xml       text
+*.yml       text
+*.yaml      text
+
+# ---- Unity YAML: smart merge driver (needs UnityYAMLMerge in git config) ----
+*.unity              merge=unity eol=lf
+*.prefab             merge=unity eol=lf
+*.asset              merge=unity eol=lf
+*.meta               merge=unity eol=lf
+*.mat                merge=unity eol=lf
+*.anim               merge=unity eol=lf
+*.controller         merge=unity eol=lf
+*.overrideController merge=unity eol=lf
+*.spriteatlas        merge=unity eol=lf
+*.physicMaterial     merge=unity eol=lf
+*.physicsMaterial2D  merge=unity eol=lf
+
+# ---- Binary assets (never diff or text-merge) ----
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.bmp   binary
+*.tga   binary
+*.tif   binary
+*.tiff  binary
+*.psd   binary
+*.exr   binary
+*.hdr   binary
+*.ico   binary
+*.fbx   binary
+*.obj   binary
+*.blend binary
+*.wav   binary
+*.mp3   binary
+*.ogg   binary
+*.aif   binary
+*.aiff  binary
+*.mp4   binary
+*.mov   binary
+*.ttf   binary
+*.otf   binary
+*.dll   binary
+*.so    binary
+*.a     binary
+*.unitypackage binary
+
+# ---- Optional: Git LFS for heavy binaries ----
+# Run `git lfs install` first, then uncomment what you need.
+# *.psd  filter=lfs diff=lfs merge=lfs -text
+# *.fbx  filter=lfs diff=lfs merge=lfs -text
+# *.mp4  filter=lfs diff=lfs merge=lfs -text

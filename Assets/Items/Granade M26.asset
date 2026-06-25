@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472eabeb3bfb34c49a114a11ad0362f9, type: 3}
+  m_Name: Granade M26
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDataSO
+  TypeId: 16
+  Icon: {fileID: 21300000, guid: a6e684f77b455ca42ac00753fed03f9d, type: 3}
+  Name: M26 Granade
+  CardDisplayTextTitle: You got M26 Granade
+  CardDisplayTextDescription: M26 Added To Your Inventory
+  SingleUse: 0
+  ConvertIntoIfAlreadyHaveIt: {fileID: 0}
+  ConvertAmount: 0
+  MinAmount: 1
+  MaxAmount: 5
+  MultiplierAmount: 5

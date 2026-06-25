@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472eabeb3bfb34c49a114a11ad0362f9, type: 3}
+  m_Name: Glasses
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDataSO
+  TypeId: 2
+  Icon: {fileID: 21300000, guid: 53911ce49d78c174990ab71fe98c6c17, type: 3}
+  Name: Aviator Glasses
+  CardDisplayTextTitle: You got the Aviator Glasses
+  CardDisplayTextDescription: Aviator Glasses Added To Inventory
+  SingleUse: 1
+  ConvertIntoIfAlreadyHaveIt: {fileID: 11400000, guid: db9f6739da862344a90439c3873f3f14, type: 2}
+  ConvertAmount: 1
+  MinAmount: 1
+  MaxAmount: 5
+  MultiplierAmount: 5

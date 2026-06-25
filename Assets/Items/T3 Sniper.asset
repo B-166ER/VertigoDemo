@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472eabeb3bfb34c49a114a11ad0362f9, type: 3}
+  m_Name: T3 Sniper
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDataSO
+  TypeId: 26
+  Icon: {fileID: 21300000, guid: c70ad042e3d984141a9f3b9c30c0b5a4, type: 3}
+  Name: T3 Sniper
+  CardDisplayTextTitle: You Recieved T3 Sniper
+  CardDisplayTextDescription: Tier 3 Sniper Added To Your Inventory
+  SingleUse: 1
+  ConvertIntoIfAlreadyHaveIt: {fileID: 11400000, guid: d893b14a15fabbe4888dff4ac4fbdf66, type: 2}
+  ConvertAmount: 30
+  MinAmount: 1
+  MaxAmount: 5
+  MultiplierAmount: 5

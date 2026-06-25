@@ -1,0 +1,41 @@
+# =============================================================
+# Vertigo6 - EditorConfig
+# One consistent style for the whole project. Existing files are
+# NOT auto-reformatted; this guides new edits and IDE format runs.
+# https://editorconfig.org
+# =============================================================
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.cs]
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+# --- C# conventions (suggestions, not build-breaking) ---
+csharp_new_line_before_open_brace = all
+csharp_prefer_braces = true:suggestion
+dotnet_sort_system_directives_first = true
+dotnet_style_qualification_for_field = false:suggestion
+
+# Naming intent for this codebase:
+#   Types & methods   -> PascalCase
+#   Locals & params   -> camelCase  (avoid snake_case)
+#   Private fields    -> _camelCase
+# A handful of existing names predate this; see CODE_REVIEW.md.
+
+[*.{json,asmdef,uss,uxml}]
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
